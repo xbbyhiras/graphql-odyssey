@@ -1,9 +1,15 @@
 # List the start up tasks. Learn more https://www.gitpod.io/docs/config-start-tasks/
 tasks:
-  - init: echo 'init script' # runs during prebuild
-    command: echo 'start script'
+  - init: |
+      cd nx-odyssey
+      npm i
+    command: |
+      npx nx run cats-in-space:serve:development
 
 # List the ports to expose. Learn more https://www.gitpod.io/docs/config-ports/
 ports:
-  - port: 3000
-    onOpen: open-preview
+  - name: cats in space
+    description: client
+    port: 4200
+    onOpen: open-browser
+    visibility: public

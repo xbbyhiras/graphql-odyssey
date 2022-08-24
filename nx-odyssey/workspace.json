@@ -1,0 +1,8 @@
+{
+  "$schema": "./node_modules/nx/schemas/workspace-schema.json",
+  "version": 2,
+  "projects": {
+    "cats-in-space": "apps/cats-in-space",
+    "cats-in-space-e2e": "apps/cats-in-space-e2e"
+  }
+}
