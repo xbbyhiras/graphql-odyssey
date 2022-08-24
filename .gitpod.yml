@@ -1,11 +1,16 @@
 # List the start up tasks. Learn more https://www.gitpod.io/docs/config-start-tasks/
 tasks:
-  - init: |
+  - name: cats-in-space
+    init: |
       cd nx-odyssey
       npm i
     command: |
       npx nx run cats-in-space:serve:development
 
+  - name: shell
+    command: |
+      cd nx-odyssey
+      node --version
 # List the ports to expose. Learn more https://www.gitpod.io/docs/config-ports/
 ports:
   - name: cats in space
