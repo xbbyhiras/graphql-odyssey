@@ -5,7 +5,7 @@ tasks:
       cd nx-odyssey
       npm i
     command: |
-      npx nx run cats-in-space:serve:development
+      npx nx run cats-in-space:serve:development --yes
 
   - name: shell
     command: |
@@ -22,5 +22,17 @@ ports:
   - name: cats in space
     description: client
     port: 3000
+    onOpen: open-browser
+    visibility: public
+
+  - name: nx graph
+    description: nx graph
+    port: 4211
+    onOpen: open-browser
+    visibility: public
+
+  - name: gql-server
+    description: gql-server
+    port: 4000
     onOpen: open-browser
     visibility: public

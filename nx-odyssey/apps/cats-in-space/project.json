@@ -51,7 +51,8 @@
       "defaultConfiguration": "development",
       "options": {
         "buildTarget": "cats-in-space:build",
-        "hmr": true
+        "hmr": true,
+        "proxyConfig": "apps/cats-in-space/proxy.conf.json"
       },
       "configurations": {
         "development": {

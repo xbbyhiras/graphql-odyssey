@@ -3,6 +3,8 @@
   "version": 2,
   "projects": {
     "cats-in-space": "apps/cats-in-space",
-    "cats-in-space-e2e": "apps/cats-in-space-e2e"
+    "cats-in-space-e2e": "apps/cats-in-space-e2e",
+    "gql-server": "apps/gql-server",
+    "schema": "libs/schema"
   }
 }
