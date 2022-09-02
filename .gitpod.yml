@@ -5,7 +5,7 @@ tasks:
       cd nx-odyssey
       npm i
     command: |
-      npx nx run cats-in-space:serve:development --yes
+      npx nx run cats-in-space:serve:development
 
   - name: shell
     command: |
